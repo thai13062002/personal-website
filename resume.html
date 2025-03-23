@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Home - Nguyen Dinh Thai </title>
+  <title>Resume - Nguyen Dinh Thai </title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -30,7 +30,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="index-page">
+<body class="resume-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
@@ -43,9 +43,9 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -80,22 +80,95 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
 
-      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2 class="text-white">Nguyen Dinh Thai</h2>
-            <p class="text-white">I'm a Backend Developer</p>
-            <a href="about.html" class="btn-get-started">About Me</a>
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>THUY LOI UNIVERSITY</h4>
+              <h5>2020 - 2024</h5>
+              <p><em>Major: Information systems</em></p>
+              <P>gpa: 3.3</P>
+            </div><!-- End Resume Item -->
           </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Experience</h3>
+            <div class="resume-item">
+              <h4>BORDER Z VIETNAM - Backend Developer</h4>
+              <h5>May 2024 - Present</h5>
+              <!-- project item -->
+              <p><em>POPCORN (mobile app) </em></p>
+              <ul>
+                <li>This is a short video viewing project for mobile devices.</li>
+                <li>Analyzed requirements and designed the database structure.</li>
+                <li>Developed RESTful APIs for user functionalities on the mobile app: Authentication,
+                  Authorization, payment verification via Apple Store and Google Play, and integration
+                  with social platforms such as Apple, Google, and TikTok.</li>
+                <li>Integrated third-party APIs: Adjust (deep link), Google Sheets (report).</li>
+                <li>Integrated Firebase push notifications, subscribe/unsubscribe to topics on iOS and
+                  Android.</li>
+                <li>Created a Google Apps Script to automate data scheduling and insertion from Google
+                  Sheets into the database.</li>
+                <li>Built an Admin page using BackPack: Includes report charts, video management, and user
+                  management.</li>
+                <li>Configured and optimized Docker for development and production.</li>
+                <li>Deployed the project on AWS, incorporating Cloudflare for enhanced performance and
+                  security.</li>
+                <li><strong>Technology:</strong> Laravel 11, MySQL, Docker, AWS, Cloudflare.</li>
+              </ul>
+              <!-- project item -->
+              <p><em>PMS Project Website </em></p>
+              <ul>
+                <li>Developed system features including sales reporting, appointment scheduling, and
+                  role-based access control.</li>
+                <li>Resolved bugs and implemented customer-specific requirements.</li>
+                <li>Handled asynchronous data synchronization between Elasticsearch and MySQL database.
+                </li>
+              </ul>
+              <!-- project item -->
+              <p><em>HRM Project </em></p>
+              <ul>
+                <li>Conducted system analysis and designed core functionalities.</li>
+                <li>Designed and structured the database for optimal performance.</li>
+                <li>Developed key features including employee management, time tracking, leave requests,
+                  and automated Excel report generation.</li>
+                <li>Created a user-friendly interface for seamless interaction.</li>
+                <li><strong>Technology:</strong> Next.js, PHP Laravel, JWT authentication, and MySQL
+                  database.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Amaisoft JSC - PHP Developer</h4>
+              <h5>Feb 2023 - Jun 2023</h5>
+              <p><em>Company website - </em> <a href="https://bekisoft.vn/" target="_blank"><i class="bi bi-globe"></i>
+                  Company
+                  website</a></p>
+              <ul>
+                <li>Develop APIs for website functionalities.</li>
+                <li>Edit the interface for the website using nuxtjs.</li>
+                <li><strong>Technology:</strong> Laravel 8, MySQL, NuxtJs.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
         </div>
+
       </div>
 
-    </section><!-- /Hero Section -->
+    </section><!-- /Resume Section -->
 
   </main>
 
